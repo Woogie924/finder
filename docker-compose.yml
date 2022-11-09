@@ -1,0 +1,11 @@
+version: "0.1"
+
+services:
+  web-front:
+    build:
+      context: front-end/finder/
+      dockerfile: front.Dockerfile
+    ports:
+      - "8080:8080"
+    expose:
+      - "8080"
